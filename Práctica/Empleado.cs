@@ -11,7 +11,6 @@ namespace Práctica
         public string Legajo { get; set; }
         public Empleado ()
         {
-
         }
 
         public Empleado (string name, int age, int weight, int height, string skin, string legajo) 
