@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Práctica
 {
     public class Empleado : Persona
     {
         public string Legajo { get; set; }
+        public string DatosEmpleado { get { return $"Mi nombre es {Nombre} Y mi número de legajo es {Legajo}"; } }
+
         public Empleado ()
         {
         }
@@ -22,9 +20,10 @@ namespace Práctica
         public void Trabajar()
         {
             Console.WriteLine("{0} está trabajando", Nombre);
-
         }
-
-
+        public void Presentarse()
+        {
+            Console.WriteLine(DatosEmpleado);
+        }
     }
 }

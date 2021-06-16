@@ -6,14 +6,15 @@ namespace Práctica
     {
         public static void Main(string[] args)
         {
-            Empleado Ariel = new Empleado ("Ariel", 30, 105, 175, "blanca", "45025");
-            Ariel.Respirar("enojado");
-            Ariel.Trabajar();
+            var ariel = new Medico ("Ariel", 30, 105, 175, "blanca", "45025", "0303456", "Clinico");
+            ariel.Presentarse();
+            ariel.Respirar("enojado");
+            ariel.Trabajar();
+            ariel.Recetar("Paracetamol", 1, 8);
         }
 
         /* 
-         * Tarea: pasar el console.writline de legajo a un método de empleado, crear alguna otra clase 
-         * que herede de persona (deportista, doctor, etc...) 
+         Aprender que lo que es una clase, herencia de clase, método, constructor, constructor base y propiedades.
          */
         
          
